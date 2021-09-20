@@ -1,0 +1,12 @@
+[
+    {
+        "operation": "shift",
+        "spec": {
+            "caller_id": "Caller_id",
+            "description": "Description",
+            "address": "Address",
+            "sys_created_by":"Sys_created_by",
+            "short_description":"Short_description"
+        }
+    }
+]
