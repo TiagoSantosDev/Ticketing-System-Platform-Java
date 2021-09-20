@@ -9,18 +9,25 @@ Spring.io was also used, namely Spring Boot to speed up the Back-End development
 The platform receives JSON Spec files, which are converted using the JOLT library, which are then manipulated by the JAVA platform. The platform can be split into 6 modules:
 
 • OLR configuration application: component that allows configuration of the platform of
-integration;
+integration;  
+
 • Jolt Spec Generator (TSWI): Component that generates, according to data received from the
 Data, a Spec file to be used by the Jolt library in order to generate the object
-intended JSON;
+intended JSON;  
+
 • JSON Input Processor (TSWI): component responsible for analyzing the tickets received by
 platform, compare its structure with existing structures in the Database and act
-properly;
+properly;  
+
 • JSON Object Converter (TSWI): component responsible for generating the adapted JSON file
 to the target Web Service, based on the JSON file.
-generated;
+generated;  
+
+
 • JSON Log Generator (TSWI): component responsible for generating and updating associated logs
-to each Ticket, adding relevant information about the processing of that Ticket;
+to each Ticket, adding relevant information about the processing of that Ticket;  
+
 • REST Web Service (TSWI): component responsible for HTTP communications with
-different web services;
+different web services;  
+
 
